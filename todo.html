@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TODO APPLICATION</title>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+</head>
+<body>
+    <div id="signup" style="display:flex;justify-content:center">
+        <input type="text" id="signup-username" placeholder="Enter Username" >
+        <input type="text" id="signup-password" placeholder="Enter password">
+        <button onclick="signup()">Signup</button>
+    </div>
+
+    <div id="signin" style="display:flex;justify-content:center">
+        <input type="text" id="signin-username" placeholder="Enter Username">
+        <input type="text" id="signin-password" placeholder="Enter Password">
+        <button onclick="signin()">Signin</button>
+    </div>
+
+<div id="todo-section" style="display:none">
+
+    <div style="display:flex;justify-content:center">
+    <h1 > TASK MANAGER </h1>
+    </div>
+
+    <div style="display:flex;justify-content:center">
+        <input type="text" id="input" placeholder="Enter your todo">
+        <button id="button" onclick="addTodo()">Add</button>
+        <button onclick="deleteFirst()">Delete First</button>
+        <button onclick="deleteLast()">Delete Last</button>
+    </div>
+
+    <div style="display:flex;justify-content:center">
+    <ul id="lists" style="list-style:none; padding:0;"></ul>
+    </div>
+
+</div>
+
+    <script src="todos.js">
+    </script>
+</body>
+</html>
